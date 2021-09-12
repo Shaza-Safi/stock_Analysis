@@ -81,9 +81,7 @@ Sub AllStocksAnalysisRefactored()
                 
     Next i
     
-    '4) Loop through your arrays to output the Ticker, Total Daily Volume, and Return.
-           
-         
+    '4) Loop through your arrays to output the Ticker, Total Daily Volume, and Return.      
     For i = 0 To 11
         Worksheets("All Stocks Analysis").Activate
         Cells(4 + i, 1).Value = tickers(i)
@@ -123,4 +121,3 @@ Sub AllStocksAnalysisRefactored()
     MsgBox "This code ran in " & (endTime - startTime) & " seconds for the year " & (yearValue)
 
 End Sub
-
